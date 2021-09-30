@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+     
+    <head>
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <h1>Forms</h1>
+        
+        <form>
+           
+            <fieldset> <!-- The fieldset is a form for usage -->
+                
+                <legend>Profile Info</legend> <!-- This is just a heading to identify what you are doing -->
+                
+                <label>Your name</label> <!-- The label helps you to kinda like identify each box-->
+                     <input type="text" placeholder="Enter your name">  <!-- Input is quite obvious. placeholder explains what is supposed to be inputed but in doesnt add up to the input. -->
+                
+                <br> <!-- this means break. It is used to end one working statment and start another one on the next line You could use two or more of the <br> for more lines. (You could use the <p></p> sintax for the paragraph but that would jump one line before starting a new working space) However, thats not used-->
+                <label>Your email</label>
+                     <input type="email" placeholder="your@email.com">
+
+                <br>
+                <label>Password</label>
+                <input type="password" placeholder="Please enter a password">
+                
+                <br><br>
+                <label>Gender</label> <br>
+                      <input type="radio" name="gender"> Male <br> <!-- The name option is for the PC to to detect thatthe two inputs are of the same relation therefore one can't check both radio buttons at a time. -->
+                      <input type="radio" name="gender"> Female
+                
+                <br><br>
+                <label>Type of computer</label> <br>
+                      <input type="checkbox"> Windows<br>
+                      <input type="checkbox"> Mac<br>
+                      <input type="checkbox"> Linux<br>
+                
+                <br>
+                <label>Age</label>
+                      <select>
+                          <option>10 - 15</option>
+                          <option>16 - 20</option>
+                          <option>21 - 60</option>
+                          <option>60+</option>
+                      </select>
+                
+                <br><br>
+                <label>Biography</label>
+                      <textarea rows="10" cols="80"></textarea> <br><br> <!-- there is no height and width attributes in textarea. so we can use rows and cols to change the size of the text area --->
+                
+                <br><br>
+                
+                <input type="submit" value="Save my info!"> <!-- the value attribute is to change the name that will be on the submit attribute and the reset attribute respectively -->                
+                <input type="reset" value="Clear that info!">
+                
+                
+                
+            </fieldset>
+        
+        </form>
+    
+    </body>
+
+</html>
